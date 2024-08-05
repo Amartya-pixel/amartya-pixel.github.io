@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="icon" type="image/png" href="C:\Users\HP\OneDrive\Desktop\Hidden_scrolls\website\resources\website_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icons" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<script>
+// JavaScript functions to control the visibility of content
+function showhigh() {
+    document.getElementById('highlights').style.display = 'block'; // Show Highlights
+    document.getElementById('publications').style.display = 'none'; // Hide Publications
+}
+
+function showpub() {
+    document.getElementById('publications').style.display = 'block'; // Show Publications
+    document.getElementById('highlights').style.display = 'none'; // Hide Highlights
+}
+</script>
+
+<title>Amartya Basu </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+</head>
+
+<body onload="showhigh();">
+<div class="container">
+<div class="section">
+<div class="profile">
+    <img src="profile.jpg">
+<div class="contact", style ="margin-top:5px;">
+        Contact: <a href="mailto:amartya@cse.iitm.ac.in">amartya@cse.iitm.ac.in</a>
+    </div>
+    <div class="links">
+        <a href="https://github.com/Amartya-pixel" target="_blank"><img src="resources/github_log.png" alt="GitHub"  style="width: 25px;"></a>
+        <a href="https://leetcode.com/Amartya20/" target="_blank"><img src="resources/leetcode_symbol.png" alt="LeetCode" style="width: 22px;"></a>
+
+        <a href="resources/Amartya_Basu.pdf" download target="_blank">CV</a>
+    
+</div>
+</div>
+
+
+<div class="only-mobile name-mobile">
+    <h1>Amartya Basu</h1>
+</div><div class="biography">
+    <h1 class="no-mobile">Amartya Basu</h1>
+    <p style="margin-right:-10px">
+ I am a final year MS by Research scholar advised by <a href = "https://www.cse.iitm.ac.in/~ayon/# ">Dr. Ayon Chakraborty</a> at the Department of Computer Science and Engineering, IIT Madras, India. 
+I am a member of the <a href =  "https://www.cse.iitm.ac.in/~ayon/# ">Sensing and Networked Systems Engineering (SENSE) Group </a> at IIT Madras.
+My research interest lies in the broad spectrum of wireless based sensing and radio tomography, centered towards design
+and implementation of intelligent mobile devices that performs real-time interaction with the physical world.
+
+Prior moving to IIT Madras, I completed my B.Tech in Computer Science and Engineering from Government College of Engineering and Leather Technology, Kolkata, India.       
+   </p>
+</div>
+</div>
+
+<input type="button" value="Highlights" onclick="showhigh()" class="button_highlights", style ="margin-top:-100px;margin-bottom:15px;"/>
+<input type="button" value="Publications" onclick="showpub()" class="button_highlights" style ="margin-top:-100px;margin-bottom:15px;"/>
+
+<div id="highlights">
+<div class="flex-container">
+    <div class="flex-item small">
+        <img src="resources/HALL.jpg" alt="Description Image 1">
+        <div class="caption" style ="margin-bottom: 230px;">Radio Tomography Imaging</div>
+        <p class="description">We design UBIQMAP, a lightweight RTI-based end-to-end system capable of mapping
+indoor spaces in real-time, with minimal to zero reliance over pre-deployed infrastructure.</p>
+ <div class="button-container">
+            <!-- Button for Paper -->
+            <button type="button" onclick="window.open('ubiqmap_resources/TMC-2024-03-0373.R1.pdf', '_blank');" class="button">
+                <i class="fas fa-file-alt"></i> Paper
+            </button>
+
+            <!-- Button for Project -->
+            <button type="button" onclick="window.open('ubiqmap.html', '_blank');"class="button">
+                <i class="fas fa-project-diagram"></i> Project
+            </button>
+        </div>
+    </div>
+    <div class="flex-item tall">
+        <img src="resources/jatayu.jpg" alt="UAV based Connectivity" >
+        <div class="caption" style ="margin-bottom: 20px;">UAV based connectivity</div>
+        <p class="description">Description for Image 2</p>
+ <button class="icon-button">
+            <i class="fas fa-file-alt"></i> Paper
+            <i class="fas fa-project-diagram"></i> Project
+        </button>
+    </div>
+    <div class="flex-item small">
+            <!-- YouTube video replaces image -->
+            <iframe class="responsive-video" src="https://www.youtube.com/embed/G76xBbxCL8A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="caption", style ="margin-bottom: 250px;">STEPMATE</div>
+            <p class="description">A piezo electric based step counter to monitor user activity - standing, walking, running on an android application.</p>
+        </div>
+</div>
+</div>
+<div class="content" id="publications" style="margin-top: -10px;">
+    <div class="publication-flex-container">
+        <div class="publication-box">
+            <h3>Journals & Conferences</h3>
+            <ul>
+                <!-- List journal and conference publications here -->
+                <li>Ubiquitous Indoor Mapping using Mobile Radio Tomography-<strong> Amartya Basu</strong>, Ayon Chakraborty, Kush Jajal -  <i><b>IEEE Transactions on Mobile Computing, 2024.</b></i></li>
+                <!-- More items -->
+            </ul>
+        </div>
+        <div class="publication-box">
+            <h3>Patents</h3>
+            <ul>
+                <!-- List patents here -->
+                <li>A system and method for mapping indoor spaces in real-time-<strong> Amartya Basu</strong> and Ayon Chakraborty, <span style="color:darkblue;">Indian Patent 202441040240</span>, 2024.</li>
+               
+                <!-- More items -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+/* Main Settings */
+ :root {
+    --mobile-thresh: 700px;
+    --width: calc(min(90vw, 80vw + 50px, 1000px));
+	--dark: #000;
+    --disabled: #888;
+    --surface: #ddd;
+	--highlight: #005cf1;
+	--light: #fff;
+	--highlight-tl: rgba(0, 92, 241, 0.8);
+	--light-tl: rgba(255, 255, 255, 0.8);
+    --radius: 4px; 
+}
+
+
+
+/* Elements */
+ html, body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+        font-weight: 400;
+	line-height: 1.5;
+	color: var(--dark);
+	background-color: #fff;
+	width: 100%;
+	margin: 0;
+}
+ .content {
+        display: none; /* Hide content by default */
+    }
+
+    .content.active {
+        display: block; /* Show content when it's active */
+    }
+
+.button_highlights{
+font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+    	font-weight: 400;
+	background-color: white;
+border-radius: 4px;
+border:none;
+transition: background-color 0.3s ease, color 0.3s ease;
+	}
+
+.button_highlights:hover{
+background-color: hsl(0, 0%, 50%);;
+  color: white;
+}
+
+
+ul li { white-space: normal; }
+img { width: 100%; vertical-align: middle; }
+a {
+	color: inherit; background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+a:active, a:hover { outline-width:0; }
+h1 { font-size: 60px; font-weight: 300; }
+h2 { font-size: 32px; font-weight: 400; }
+h3 { font-size: 24px; font-weight: 400; }
+h4 { font-size: 20px; font-weight: 400; }
+h5 { font-size: 18px; font-weight: 400; }
+h6 { font-size: 16px; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { margin: 10px 0; }
+hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
+
+/* Footer */
+#footer-ref, #footer-links { font-size: 12px; }
+#footer-ref::before, #footer-links::before { content: "\25c0\fe0e"; }
+#footer-ref::after, #footer-links::after { content: "\25c0\fe0e"; }
+#footer-ref {
+    position: absolute; visibility: hidden;
+    width: auto; height: auto; white-space: nowrap;
+}
+#footer-links {
+    position: fixed; right: 20px; bottom: 20px; width: 10px; height: 15px;
+    overflow-x: hidden; overflow-y: hidden; transition: 0.3s;z-index: 10; 
+}
+
+/* Paper-style paragraph */
+.p { margin-top: 1em; margin-bottom: 1em; }
+.p ol, .p ul {
+    counter-reset: list;
+    margin-top: 0.5em; margin-bottom: 0.5em;
+}
+.p p { margin-top: 0.5em; margin-bottom: 0.5em; }
+.p ol > li { list-style: none; }
+.p ol > li:before {
+    content: "(" counter(list) ") ";
+    counter-increment: list;
+}
+
+/* Main container */
+.container {
+    width: var(--width);
+   padding: calc(min(5vw, 50px)) 0;
+}
+.container .section { width: 100%; padding-bottom: 2em; }
+.container .section:not(:first-child) {
+    margin-top: calc(min(1000px, 90vw) * 0.02);
+}
+
+/* Bio */
+.profile {
+    width: calc(var(--width) * 0.25);
+    display: inline-block;
+    vertical-align: top;
+    padding-right: calc(var(--width) * 0.06);
+}
+.biography {
+    display: inline-block; vertical-align: top; position: relative;
+}
+.name-mobile { display: inline-block; width: calc(var(--width) * 0.65); }
+.name-mobile h1, .biography h1 {
+    margin-top: 0; padding-top: 0;
+    line-height: 60px; word-break: normal;
+}
+
+/* Mobile Management */
+.only-mobile, .no-mobile { display: inline-block; }
+/* Narrow screen */
+@media screen and (max-width: 700px) {
+	.no-mobile { display: none !important; }
+    .biography { width: 90vw; }
+    .container { margin-left: calc(0.5 * (100vw - var(--width))); }
+}
+/* Wide screen */
+@media screen and (min-width: 700px) {
+	.only-mobile { display: none !important; }
+    .biography { width: calc(var(--width) * 0.65); }
+    .container { margin-left: calc(0.5 * (100vw - var(--width))); }
+}
+
+/* Papers */
+.toggle-filters td { padding: 0em 2em 0.2em 0em; }
+.toggle-filters span { margin: 0.2em; }
+.papers > div {
+    margin: 1em 0em, 10px, 10px;
+}
+.authors > span:not(:last-child) { margin-right: 3em; }
+.authors > span { display: inline-block; }
+.paper-links { padding: 1em 0em; }
+.tabs {
+    background-color: var(--disabled); color: var(--light); display: block;
+    font-size: 18px; font-weight: 400
+}
+.tabs { border-radius: var(--radius) var(--radius) 0 0; }
+.tabs > div:first-child { border-radius: var(--radius) 0 0 0; }
+.tabs > div, .tab {
+    background-color: var(--dark); padding: 0.5em 1.5em; display: inline-block
+}
+.topics > div {
+    border: 1px solid black; border-radius: 0 0 var(--radius) var(--radius);
+    display: block; padding: 1em;
+}
+.topics > div.disabled, .papers > div.disabled { display: none !important; }
+.papers > div > div {
+    padding: 0.6em; border: 1px solid black;
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+.papers > div > a {
+    background-color: var(--dark); color: var(--light); padding: 0.6em;
+    display: block; text-decoration: none;
+	font-size :18px;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.papers > div > a.active:hover {
+    background-color: var(--highlight);
+}
+.paper-links > a, .button {
+    background-color: var(--dark); color: var(--light);
+    padding: 0.5em 1em; text-decoration: none; border-radius: var(--radius);
+    display: inline-block; margin: 0.2em 0em;
+}
+.button.disabled, .tabs > div.disabled {
+    background-color: var(--disabled);
+}
+.paper-links > a:not(:last-child) { margin-right: 0.5em; }
+.paper-links > a:hover, .button:hover, .tabs > div:hover, .tab:hover {
+    background-color: var(--highlight-tl); color: var(--light) }
+
+/* Images */
+.image-800, .image-600, .image-500, .image-400 { width: 100%; }
+.image-800 > img, .image-600 > img, .image-500 > img, .image-400 > img
+    { margin-left: auto; margin-right: auto; display: block; }
+.image-600 > img { width: calc(min(100%, 700px)); }
+.image-500 > img { width: calc(min(100%, 500px)); }
+.image-400 > img { width: calc(min(100%, 400px)); }
+
+.img_ubiq_map{
+ border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+/* Research Highlights */
+    .flex-container {
+        display: flex;
+        justify-content: space-around; /* Centers and spaces the flex items */
+        padding: 1px;
+        gap: 15px; /* Adds space between the flex items */
+    }
+
+    .flex-item {
+        background-color: #f2f2f2;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow around the box */
+        border-radius: 8px; /* Adds rounded corners to the boxes */
+        text-align: center; /* Centers the text and other content horizontally */
+        display: flex;
+        flex-direction: column; /* Organizes the content vertically */
+        align-items: center; /* Aligns items in the center of the box */
+        padding: 2px; /* Padding inside the box */
+        color: white; /* Text color for the caption */
+        position: relative; /* Needed for absolute positioning of caption */
+overflow: hidden;
+    }
+
+    .flex-item img {
+        width: 100%;  /* Makes the image fully responsive within its container */
+        height: auto; /* Maintains the aspect ratio of the image */
+box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+        border-radius: 4px; /* Rounded corners for the image */
+opacity: 0.55; 
+    }
+
+    .caption {
+        position: absolute;
+        bottom: 8px; /* Position the caption at the bottom of the image */
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the caption */
+        padding: 5px 0; /* Padding for the caption */
+	font-size: 22px;
+ margin-bottom: 80px;
+border-radius: 4px;
+font-family: 'Merriweather', serif;  
+    }
+
+    .description {
+        margin-top: 10px; /* Adds space between the image and the text below it */
+margin-left :0;
+margin: right;
+color:black;
+font-family: 'Merriweather', serif; 
+    }
+
+    /* Specific styles for different sizes */
+    .small {
+        flex: 1;
+        height: 350px;
+    }
+
+    .tall {
+        flex: 1;
+        height: 200px; /* Taller than the others */
+    }
+
+
+
+.responsive-video {
+    aspect-ratio: 16 / 9; /* Maintain a standard video aspect ratio */
+    width: 110%; /* Video will scale based on its container's width */
+opacity:0.3;
+    
+}
+.button-container {
+    display: flex; /* Makes child elements (buttons) align horizontally */
+    justify-content: center; /* Centers buttons within the container */
+    gap: 10px; /* Adds space between buttons */
+}
+
+.button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 4px 6px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-flex; /* Inline-flex keeps the button content aligned nicely */
+    align-items: center;
+    justify-content: center;
+}
+
+.button i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.publication-flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: -5px; /* Shifts the container slightly to the left */
+}
+
+.publication-box {
+    flex: 1; /* Each box takes equal space */
+    margin: 10px;
+margin-top:2px;
+padding-top: 2px;
+padding-left : 10px;
+padding: right: 10px;
+    background-color: #f9f9f9; /* Mild grey background */
+    border: 2px solid #333; /* Black border for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Pronounced shadow */
+}
+
+.publication-box h3 {
+    color: #333; /* Dark grey for headers */
+}
+
+.publication-box ul {
+    list-style: none;
+margin-left:-10px;
+margin-top: -10px;
+    padding: 1px;
+}
+
+.publication-box ul li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc; /* Light grey line between items */
+font-family: 'Merriweather', serif;  
+}
+
