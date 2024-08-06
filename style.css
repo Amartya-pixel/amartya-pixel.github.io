@@ -100,6 +100,9 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
 .container .section:not(:first-child) {
     margin-top: calc(min(1000px, 90vw) * 0.02);
 }
+.contact {
+    margin-top: 10px; /* Ensures spacing between image and contact info */
+}
 
 /* Bio */
 .profile {
@@ -131,6 +134,12 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
     .biography { width: calc(var(--width) * 0.65); }
     .container { margin-left: calc(0.5 * (100vw - var(--width))); }
 }
+@media (max-width: 700px) {
+    .container, .section, .biography, .profile {
+        width: 100%; /* Full width for smaller screens */
+        padding: 10px; /* Padding for spacing */
+    }
+    }
 
 /* Papers */
 .toggle-filters td { padding: 0em 2em 0.2em 0em; }
