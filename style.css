@@ -196,10 +196,11 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
   width: 150px;
 }
 
+/* Research Highlights */
 .flex-container {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap onto the next line as needed */
-    justify-content: space-around; /* Centers and spaces the flex items */
+    justify-content: space-around; /* Centers and spaces the flex items on larger screens */
     padding: 1px;
     gap: 15px; /* Adds space between the flex items */
 }
@@ -216,15 +217,14 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
     color: white; /* Text color for the caption */
     position: relative; /* Needed for absolute positioning of caption */
     overflow: hidden;
-    margin-bottom: 15px; /* Ensures spacing between items when they wrap */
 }
 
 .flex-item img {
     width: 100%;  /* Makes the image fully responsive within its container */
     height: auto; /* Maintains the aspect ratio of the image */
+    opacity: 0.55;
     box-shadow: 0 4px 8px rgba(0,0,0,0.6);
     border-radius: 4px; /* Rounded corners for the image */
-    opacity: 0.55;
 }
 
 .caption {
@@ -234,8 +234,6 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the caption */
     padding: 5px 0; /* Padding for the caption */
     font-size: 22px;
-    margin-bottom: 80px;
-    border-radius: 4px;
     font-family: 'Merriweather', serif;
 }
 
@@ -245,25 +243,32 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
     font-family: 'Merriweather', serif;
 }
 
-/* Specific styles for different sizes */
-.small {
-    flex: 1 1 100%; /* Adjusts to take full width on mobile */
+/* Mobile Management: stack items vertically */
+@media (max-width: 700px) {
+    .flex-container {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+
+    .flex-item {
+        width: 100%; /* Each item takes full width to fill the container */
+        margin-bottom: 15px; /* Ensures spacing between items */
+    }
 }
 
-.tall {
-    flex: 1 1 100%; /* Adjusts to take full width on mobile, taller item */
-}
+/* Wide screen: items display in row with space around */
+@media (min-width: 701px) {
+    .flex-container {
+        flex-direction: row; /* Items laid out in row on larger screens */
+    }
 
-@media screen and (min-width: 700px) {
-    .small, .tall {
-        flex: 1 1 30%; /* Adjusts to take less space on wider screens */
+    .flex-item {
+        flex: 1 1 30%; /* Adjusts to take up about a third of the row space */
     }
 
     .tall {
-        height: 200px; /* Specific height for taller item */
+        height: 200px; /* Taller than the others for differentiation */
     }
 }
-
 
 
 .responsive-video {
