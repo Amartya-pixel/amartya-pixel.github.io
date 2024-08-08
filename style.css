@@ -359,50 +359,49 @@ font-family: 'Merriweather', serif;
   color: white;
 }
 
-@media (max-width: 700px) {
-    .publication-flex-container {
-        flex-direction: column; /* Stacks items vertically on smaller screens */
-    }
-
-    ..publication-box {
-        width: 100%; /* Each item takes full width to fill the container */
-        margin-bottom: 15px; /* Ensures spacing between items */
-    }
-}
-
 @media (min-width: 701px) {
     .publication-flex-container {
-        flex-direction: row; /* Items laid out in a row on larger screens */
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        margin-top: 20px;
+        margin-left: -5px;
     }
 
     .publication-box {
-        flex: 1; /* Each box takes equal space */
+        flex: 1;
         margin: 10px;
         margin-top: 2px;
         padding-top: 2px;
         padding-left: 10px;
         padding-right: 10px;
-        background-color: #f9f9f9; /* Mild grey background */
-        border: 2px solid #333; /* Black border for contrast */
-        border-radius: 8px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Pronounced shadow */
-    }
-
-    .publication-box h3 {
-        color: #333; /* Dark grey for headers */
-    }
-
-    .publication-box ul {
-        list-style: none;
-        margin-left: -10px;
-        margin-top: -10px;
-        padding: 1px;
-    }
-
-    .publication-box ul li {
-        padding: 8px;
-        border-bottom: 1px solid #ccc; /* Light grey line between items */
-        font-family: 'Merriweather', serif;
+        background-color: #f9f9f9;
+        border: 2px solid #333;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 }
+
+@media (max-width: 700px) {
+    .publication-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .publication-box {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 2px;
+        padding-top: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #f9f9f9;
+        border: 2px solid #333;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+}
+
