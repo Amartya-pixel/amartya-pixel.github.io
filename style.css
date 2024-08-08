@@ -358,6 +358,18 @@ font-family: 'Merriweather', serif;
    background-color: hsl(0, 0%, 50%);;
   color: white;
 }
+
+@media (max-width: 700px) {
+    .publication-flex-container {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+
+    ..publication-box {
+        width: 100%; /* Each item takes full width to fill the container */
+        margin-bottom: 15px; /* Ensures spacing between items */
+    }
+}
+
 @media (min-width: 701px) {
     .publication-flex-container {
         flex-direction: row; /* Items laid out in a row on larger screens */
