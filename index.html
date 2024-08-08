@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<link rel="icon" type="image/png" href="C:\Users\HP\OneDrive\Desktop\Hidden_scrolls\website\resources\website_logo.png">
+<link rel="icon" type="image/png" href="resources/website_logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -16,11 +16,15 @@
 function showhigh() {
     document.getElementById('highlights').style.display = 'block'; // Show Highlights
     document.getElementById('publications').style.display = 'none'; // Hide Publications
+     document.getElementById('high-button').classList.add('active'); // Activate Highlights button
+    document.getElementById('pub-button').classList.remove('active'); 
 }
 
 function showpub() {
     document.getElementById('publications').style.display = 'block'; // Show Publications
     document.getElementById('highlights').style.display = 'none'; // Hide Highlights
+    document.getElementById('pub-button').classList.add('active'); // Activate Publications button
+    document.getElementById('high-button').classList.remove('active'); // Deactivate Highlights button
 }
 </script>
 
@@ -61,8 +65,8 @@ Prior moving to IIT Madras, I completed my B.Tech in Computer Science and Engine
 </div>
 </div>
 
-<input type="button" value="Highlights" onclick="showhigh()" class="button_highlights", style ="margin-top:-100px;margin-bottom:15px;"/>
-<input type="button" value="Publications" onclick="showpub()" class="button_highlights" style ="margin-top:-100px;margin-bottom:15px;"/>
+<input type="button" value="Highlights" onclick="showhigh()"  id="high-button" class="button_highlights", style ="margin-top:-100px;margin-bottom:15px;"/>
+<input type="button" value="Publications" onclick="showpub()" id="pub-button" class="button_highlights" style ="margin-top:-100px;margin-bottom:15px;"/>
 
 <div id="highlights">
 <div class="flex-container">

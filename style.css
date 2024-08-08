@@ -110,6 +110,7 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
     display: inline-block;
     vertical-align: top;
     padding-right: calc(var(--width) * 0.06);
+     
 }
 .biography {
     display: inline-block; vertical-align: top; position: relative;
@@ -353,4 +354,7 @@ margin-top: -10px;
     border-bottom: 1px solid #ccc; /* Light grey line between items */
 font-family: 'Merriweather', serif;  
 }
-
+.button_highlights.active {
+   background-color: hsl(0, 0%, 50%);;
+  color: white;
+}
