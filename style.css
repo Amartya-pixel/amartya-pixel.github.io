@@ -404,4 +404,12 @@ font-family: 'Merriweather', serif;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 }
-
+.zoomed-image {
+       /* Adjust this to control the image width */
+     /* Set a fixed height or adjust as needed */
+    object-fit: cover; /* The image is resized to maintain its aspect ratio while filling the element’s entire content box */
+     /* Horizontal center, vertical 10% from the top */
+    
+    transform: scale(1.1); /* Zoom effect */
+    opacity: 0.3; /* Adjust opacity for transparency */
+}
