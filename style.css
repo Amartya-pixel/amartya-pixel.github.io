@@ -410,6 +410,6 @@ font-family: 'Merriweather', serif;
     object-fit: cover; /* The image is resized to maintain its aspect ratio while filling the element’s entire content box */
      /* Horizontal center, vertical 10% from the top */
     
-    transform: scale(1.2); /* Zoom effect */
+    transform: scale(1.1); /* Zoom effect */
     opacity: 0.3; /* Adjust opacity for transparency */
 }
