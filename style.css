@@ -48,7 +48,6 @@ background-color: hsl(0, 0%, 50%);;
   color: white;
 }
 
-
 ul li { white-space: normal; }
 img { width: 100%; vertical-align: middle; }
 a {
@@ -141,7 +140,13 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
         padding: 10px; /* Padding for spacing */
     }
     }
-
+@media (max-width: 600px) {
+    .news-section {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
 /* Papers */
 .toggle-filters td { padding: 0em 2em 0.2em 0em; }
 .toggle-filters span { margin: 0.2em; }
