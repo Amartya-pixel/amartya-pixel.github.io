@@ -11,22 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<script>
-// JavaScript functions to control the visibility of content
-function showhigh() {
-    document.getElementById('highlights').style.display = 'block'; // Show Highlights
-    document.getElementById('publications').style.display = 'none'; // Hide Publications
-     document.getElementById('high-button').classList.add('active'); // Activate Highlights button
-    document.getElementById('pub-button').classList.remove('active'); 
-}
-
-function showpub() {
-    document.getElementById('publications').style.display = 'block'; // Show Publications
-    document.getElementById('highlights').style.display = 'none'; // Hide Highlights
-    document.getElementById('pub-button').classList.add('active'); // Activate Publications button
-    document.getElementById('high-button').classList.remove('active'); // Deactivate Highlights button
-}
-</script>
 
 <title>Amartya Basu </title>
 <meta charset="UTF-8">
@@ -41,11 +25,11 @@ function showpub() {
 <div class="contact", style ="margin-top:20px;">
         Contact: <a href="mailto:amartya@cse.iitm.ac.in">amartya@cse.iitm.ac.in</a>
     </div>
-    <div class="links">
-    <a href="https://scholar.google.com/citations?user=W8CtHSUAAAAJ&hl=en&authuser=2" target="_blank"><img src="resources/google_scholar_logo.png" alt="GoogleScholar"  style="width: 25px;"></a>
-        <a href="https://github.com/Amartya-pixel" target="_blank"><img src="resources/github_log.png" alt="GitHub"  style="width: 25px;"></a>
+    <div class="links" style="margin-top:10px">
+    <a href="https://scholar.google.com/citations?user=W8CtHSUAAAAJ&hl=en&authuser=2" target="_blank"><img src="resources/google_scholar_logo.png" alt="GoogleScholar"  style="width: 35px;"></a>
+         <a href="https://github.com/Amartya-pixel" target="_blank"><img src="resources/github_log.png" alt="GitHub"  style="width: 35px;"></a>
         
-        <a href="resources/Amartya_Basu.pdf" target="_blank">CV</a>
+        <a href="resources/Amartya_Basu.pdf" target="_blank"><img src="resources/cv_logo.png" alt="CV"  style="width: 35px;"></a>
     
 </div>
 </div>
@@ -65,7 +49,7 @@ Prior to joining IIT Madras, I completed my B.Tech in Computer Science and Engin
    </p>
 </div>
 
-<div class="news-section" style="padding: 5px; border: 1px solid #ddd; border-radius: 10px; background-color: #f9f9f9; margin-top: 10px; margin-bottom: 10px;gap:10px; margin-right: -15px;">
+<div class="news-section" style="padding: 5px; border: 1px solid #ddd; border-radius: 10px; background-color: #f9f9f9; margin-top: 10px; margin-bottom: 10px;gap:10px; margin-right: -15px;box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);">
     <h3 style="font-family: 'Merriweather', serif; font-size: 22px; margin-bottom: -8px; text-align: center;">Latest News</h3>
     
      <ul style="list-style-type: disc; padding-left: 25px;">
@@ -102,7 +86,7 @@ Prior to joining IIT Madras, I completed my B.Tech in Computer Science and Engin
         <div class="flex-content">
             <p class="description">
                 <span style="font-size:20px;text-decoration: underline; text-underline-offset: 4px;">
-                    <strong>Radio Tomography Imaging</strong>
+                    <strong>Radio Tomographic Imaging</strong>
                 </span>
                 <br>
                 We design UBIQMAP, a lightweight RTI-based end-to-end system capable of mapping indoor spaces in real-time, with minimal to zero reliance over pre-deployed infrastructure. 
@@ -110,6 +94,8 @@ Prior to joining IIT Madras, I completed my B.Tech in Computer Science and Engin
 <br>
 <span style="color:blue;">A system and method for mapping indoor spaces in real-time, Amartya Basu and Ayon Chakraborty.
 </span>Patent(India) <span style="color:red;">Applied</span>.
+<br>
+<span><span style="color:red";>Technology transfer</span>- PCB design and full prototype development are currently underway as part of the startup initiative.</span>
             </p>
             <div class="button-container">
                 <button type="button" onclick="window.open('https://ieeexplore.ieee.org/abstract/document/10634790', '_blank');" class="button">
@@ -154,7 +140,36 @@ Prior to joining IIT Madras, I completed my B.Tech in Computer Science and Engin
         </div>
     </div>
 
-    <!-- Flex Box 3 (YouTube example) -->
+    <!-- Flex Box 3 -->
+    <div class="flex-box">
+
+        <div class="flex-image">
+    <img src="resources/jatayu.jpg" alt="UAV based Connectivity" style="box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.6);">
+</div>
+        <div class="flex-content">
+            <p class="description">
+                <span style="font-size:20px;text-decoration: underline; text-underline-offset: 4px;">
+                    <strong>JATAYU - UAV based video calling</strong>
+                </span>
+                <br>
+                Leveraging UAV technology to establish reliable communication networks, enabling real-time video calls and critical connectivity in emergency zones.
+                
+            </p>
+            <div class="button-container">
+                <button type="button" onclick="window.open('', '_blank');" class="button">
+                    <i class="fas fa-file-alt"></i> Paper
+                </button>
+                <button type="button" onclick="window.open('', '_blank');" class="button">
+                    <i class="fas fa-project-diagram"></i> Project
+                </button>
+                <button type="button" onclick="window.open('', '_blank');" class="button">
+                    <i class="fab fa-github"></i> GitHub
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flex Box 4 (YouTube example) -->
     <div class="flex-box">
         <div class="flex-image">
             <div class="responsive-video-container">
