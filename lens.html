@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amartya's lens</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .classy-heading-container {
+            background-color: white; /* White background */
+            padding: 10px;
+            overflow: hidden; /* Ensure heading stays within bounds */
+
+        }
+        .classy-heading {
+            color: black; /* Darker shade of grey for text */
+            font-family: 'Open Sans', sans-serif;
+            font-size: 35px;
+            letter-spacing: 2px;
+            overflow: hidden; /* Ensures animation is visible */
+            white-space: nowrap; /* Prevents wrapping */
+            border-right: 2px solid #808080; /* Typing cursor effect */
+            display: inline-block; /* Prevents block expansion */
+            animation: typing 7s steps(40, end), blink-caret 0.5s step-end 10 forwards; /* Cursor stops blinking */
+margin-bottom:-20px;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 65%;
+            }
+        }
+
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #808080;
+            }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four columns */
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .portrait {
+            grid-row: span 2; /* Portrait images span two rows */
+        }
+        footer {
+            text-align: center;
+            padding:0.5px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+margin-bottom: 5px;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .classy-heading {
+                font-size: 24px; /* Smaller font for tablets */
+            }
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+            }
+        }
+        @media (max-width: 480px) {
+            .classy-heading {
+                font-size: 20px; /* Smaller font for phones */
+                text-align: center; /* Center-align heading for phones */
+            }
+            .gallery {
+                grid-template-columns: 1fr; /* Single-column layout for phones */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="classy-heading-container">
+    <div class="classy-heading">
+        Moments Captured: ক্যামেরা বন্ধি গল্প
+    </div>
+</div>
+
+<section id="gallery" class="gallery">
+    <img src="pictures/2.JPG" alt="Sample Photo">
+    <img src="pictures/3.JPG" alt="Sample Photo" class="portrait">
+    <img src="pictures/fire.JPG" alt="Sample Photo">
+    <img src="pictures/dusk.JPG" alt="Sample Photo">
+    <img src="pictures/1.JPG" alt="Sample Photo">
+<img src="pictures/gangtok1.JPG" alt="Sample Photo">
+<img src="pictures/gangtok2.JPG" alt="Sample Photo">
+</section>
+
+<footer>
+    <p>© 2024 Amartya</p>
+</footer>
+
+</body>
+</html>
