@@ -320,7 +320,7 @@ background-color: #fff; /* Ensures background is solid for the shadow effect */
             background: #333;
             color: white;
             margin-top: 20px;
-            margin-bottom: -5px;
+            margin-bottom: -40px;
         }
 
 @media (max-width: 768px) {
