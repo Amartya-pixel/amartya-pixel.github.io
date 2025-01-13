@@ -304,13 +304,9 @@ background-color: #fff; /* Ensures background is solid for the shadow effect */
             padding: 0.6px;
             background: #333;
             color: white;
-            
- margin-top: 20px; /* Gap above the footer */
-    position: fixed; /* Stick footer to the bottom */
-    bottom: 0; /* Position at the very bottom */
-    left: 0; /* Start at the very left */
+            margin-bottom:-70px;
+
     width: 100%; /* Ensure it spans the entire width */
-    z-index: 1000; 
         }
 
 @media (max-width: 768px) {
