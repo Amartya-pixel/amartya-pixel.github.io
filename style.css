@@ -260,31 +260,16 @@ background-color: #fff; /* Ensures background is solid for the shadow effect */
     overflow: hidden;
     max-width: 100%;
     background-color: #000;
+ margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .flex-box {
-        flex-direction: column;
-        margin-right: 0;
-    }
-
-    .flex-image {
-        margin-right: 0;
-        margin-bottom: 10px;
-        max-width: 100%; /* Ensures images take full width on mobile */
-        text-align: center; /* Center images for mobile */
-    }
-
-    .flex-content {
-        padding: 5px; /* Reduce padding for mobile */
-    }
-}
 
 .responsive-video {
     aspect-ratio: 16 / 9; /* Maintain a standard video aspect ratio */
     width: 100%; /* Video will scale based on its container's width */
     
 }
+
 .button-container {
     display: flex; /* Makes child elements (buttons) align horizontally */
     justify-content: center; /* Centers buttons within the container */
@@ -319,8 +304,13 @@ background-color: #fff; /* Ensures background is solid for the shadow effect */
             padding: 0.6px;
             background: #333;
             color: white;
-            margin-top: 20px;
-            margin-bottom: -40px;
+            
+ margin-top: 20px; /* Gap above the footer */
+    position: fixed; /* Stick footer to the bottom */
+    bottom: 0; /* Position at the very bottom */
+    left: 0; /* Start at the very left */
+    width: 100%; /* Ensure it spans the entire width */
+    z-index: 1000; 
         }
 
 @media (max-width: 768px) {
@@ -339,7 +329,8 @@ background-color: #fff; /* Ensures background is solid for the shadow effect */
     .flex-content {
         padding: 5px; /* Reduce padding for mobile */
     }
-}.container2 {
+}
+.container2 {
     display: grid;
     grid-template-columns: 3fr 1fr; /* Research (larger) | News (smaller) */
     gap: 20px;
