@@ -340,7 +340,7 @@ background-color: #fff; /* Ensures background is solid for the shadow effect */
       text-decoration: none;
       color: #777; /* Medium grey before hover */
       font-weight: normal;
-      transition: color 0.3s ease, font-weight 0.3s ease;
+      transition: color 0.8s ease, font-weight 0.5s ease;
     }
 
     .link-underline::after {
@@ -351,7 +351,7 @@ background-color: #fff; /* Ensures background is solid for the shadow effect */
       width: 0;
       height: 2px;
       background-color: #555; /* Darker grey underline */
-      transition: width 0.6s ease;
+      transition: width 1s ease;
       transform: translateX(-50%);
     }
 
