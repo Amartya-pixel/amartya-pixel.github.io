@@ -11,6 +11,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<script>
+function showUpdateMessage(event) {
+    event.preventDefault();
+
+    const updateText = "Updated on Dec 28, 2024"; 
+
+    // Create and show message box
+    const msg = document.createElement('div');
+    msg.innerText = updateText;
+    msg.style.position = 'fixed';
+    msg.style.top = '20px';
+    msg.style.left = '50%';
+    msg.style.transform = 'translateX(-50%)';
+    msg.style.background = '#333';
+    msg.style.color = '#fff';
+    msg.style.padding = '10px 20px';
+    msg.style.borderRadius = '8px';
+    msg.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
+    msg.style.zIndex = 1000;
+    document.body.appendChild(msg);
+
+    // Open the link after a short delay
+    const href = event.currentTarget.href;
+    setTimeout(() => {
+        document.body.removeChild(msg);
+        window.open(href, '_blank');
+    }, 1000); // Delay of 1 seconds
+}
+</script>
 
 <title>Amartya Basu</title>
 <meta charset="UTF-8">
@@ -31,7 +60,7 @@
         <a href="https://youtube.com/@amartya-backyard" target="_blank"><img src="resources/youtube.png" alt="CV"  style="width: 40px;"></a>
        <a href="https://www.linkedin.com/in/amartya-basu-510b7a1a2/" target="_blank"><img src="resources/linkedin_logo.png" alt="linkedin"  style="width: 35px;"></a>
         <a href="https://x.com/amartya_io" target="_blank"><img src="resources/x_logo.png" alt="X"  style="width: 40px;"></a>
-        <a href="resources/Amartya_Basu.pdf" target="_blank"><img src="resources/cv_logo.png" alt="CV"  style="width: 40px;"></a>
+        <a href="resources/Amartya_Basu.pdf" target="_blank" onclick="showUpdateMessage(event)"><img src="resources/cv_logo.png" alt="CV"  style="width: 40px;"></a>
     
 </div>
 </div>
