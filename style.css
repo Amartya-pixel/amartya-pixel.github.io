@@ -312,7 +312,7 @@ font-size:16px;
 
 @media (max-width: 768px) {
  .news-section-column {
-        margin-left: -5px;
+        margin-left: -15px;
 }
     .flex-box {
         flex-direction: column;
