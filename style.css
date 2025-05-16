@@ -567,18 +567,22 @@ margin-top: 20px;
 
 @media (max-width: 900px) and (orientation: portrait) {
   .container2 {
-  }
-
-  .research-section-column {
-    width: 40%; /* Make this smaller */
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Stack vertically */
   }
 
   .news-section-column {
-    width: auto; /* Let text flow around */
-    overflow: hidden; /* Clear float nicely */
+    order: 1; /* Appear first */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .research-section-column {
+    order: 2; /* Appear second */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   .flex-image {
