@@ -557,26 +557,32 @@ margin-top: 20px;
 
 @media (max-width: 900px) and (orientation: portrait) {
     .container2 {
+        display: flex;
         flex-direction: column;
-        align-items: center; /* Optional: center content vertically */
+        flex-wrap: wrap; /* Ensures items wrap properly */
+        align-items: stretch; /* Makes children take full width */
     }
 
     .news-section-column,
     .research-section-column {
-        width: 100%; /* Make columns full width on vertical view */
-        margin-bottom: 20px; /* Add some spacing between sections */
+        width: 100%;           /* Stack full width */
+        box-sizing: border-box;
+        padding: 10px 15px;    /* Add spacing */
+        margin: 0 auto;        /* Center if needed */
     }
 
     .flex-image {
-        width: 100%; /* Ensure image resizes properly */
+        width: 100%;           /* Prevent large images from overflowing */
+        height: auto;
         margin-bottom: 10px;
     }
 
-    .news-section h3,
-    .news-section ul {
-        text-align: center; /* Optional: better for vertical screens */
+    .news-section,
+    .research-section {
+        display: block;        /* Ensure proper box flow */
     }
 }
+
 .flex-image {
         margin-bottom: -20px; /* Reduce spacing between image and text */
     }
