@@ -557,20 +557,19 @@ margin-top: 20px;
 
 @media (max-width: 900px) and (orientation: portrait) {
   .container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    display: block; /* Turn off flex to allow text wrapping */
   }
 
-  .news-section-column,
   .research-section-column {
-    width: 100% !important;      /* Force full width */
-    padding: 10px 0;
-    box-sizing: border-box;
-    position: static !important; /* Reset any absolute/fixed */
-    z-index: auto !important;
-    float: none !important;      /* Reset any float */
-    clear: both;
+    width: 40%; /* Make this smaller */
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .news-section-column {
+    width: auto; /* Let text flow around */
+    overflow: hidden; /* Clear float nicely */
   }
 
   .flex-image {
@@ -578,13 +577,8 @@ margin-top: 20px;
     height: auto;
     margin-bottom: 10px;
   }
-
-  .news-section,
-  .research-section {
-    width: 100%;
-    display: block;
-  }
 }
+
 
 .flex-image {
         margin-bottom: -20px; /* Reduce spacing between image and text */
