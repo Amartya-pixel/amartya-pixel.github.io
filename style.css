@@ -567,7 +567,6 @@ margin-top: 20px;
 
 @media (max-width: 900px) and (orientation: portrait) {
   .container2 {
-    display: block; /* Turn off flex to allow text wrapping */
   }
 
   .research-section-column {
