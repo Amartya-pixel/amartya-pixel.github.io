@@ -568,18 +568,18 @@ margin-top: 20px;
 @media (max-width: 900px) and (orientation: portrait) {
   .container2 {
     display: flex;
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column; /* Stack items vertically */
   }
 
   .news-section-column {
-    order: 1; /* Appear first */
+    order: 1;                /* Show Latest News FIRST */
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
   }
 
   .research-section-column {
-    order: 2; /* Appear second */
+    order: 2;                /* Show Research Work SECOND */
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -591,3 +591,4 @@ margin-top: 20px;
     margin-bottom: 10px;
   }
 }
+
