@@ -568,21 +568,24 @@ margin-top: 20px;
 @media (max-width: 900px) and (orientation: portrait) {
   .container2 {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
+    width: 100%; /* Ensure full container width */
+  }
+
+  .news-section-column,
+  .research-section-column {
+    order: unset; /* Reset to default */
+    width: 100% !important;      /* Take full width */
+    box-sizing: border-box;
+    padding: 10px 15px;
   }
 
   .news-section-column {
-    order: 1;                /* Show Latest News FIRST */
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    order: 1; /* First */
   }
 
   .research-section-column {
-    order: 2;                /* Show Research Work SECOND */
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    order: 2; /* Second */
   }
 
   .flex-image {
@@ -591,4 +594,3 @@ margin-top: 20px;
     margin-bottom: 10px;
   }
 }
-
