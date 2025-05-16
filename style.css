@@ -555,6 +555,16 @@ margin-top: 20px;
         order: 2; /* Research comes next */
     }
 
+
+
+
+.flex-image {
+        margin-bottom: -20px; /* Reduce spacing between image and text */
+    }
+
+    
+}
+
 @media (max-width: 900px) and (orientation: portrait) {
   .container2 {
     display: block; /* Turn off flex to allow text wrapping */
@@ -577,12 +587,4 @@ margin-top: 20px;
     height: auto;
     margin-bottom: 10px;
   }
-}
-
-
-.flex-image {
-        margin-bottom: -20px; /* Reduce spacing between image and text */
-    }
-
-    
 }
