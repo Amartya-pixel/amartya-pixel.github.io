@@ -36,7 +36,7 @@ function showUpdateMessage(event) {
     const href = event.currentTarget.href;
     setTimeout(() => {
         document.body.removeChild(msg);
-        window.open(href, '_blank');
+         window.open(href, '_blank');
     }, 1000); // Delay of 1 seconds
 }
 </script>
@@ -60,7 +60,7 @@ function showUpdateMessage(event) {
         <a href="https://youtube.com/@amartya-backyard" target="_blank"><img src="resources/youtube.png" alt="CV"  style="width: 40px;"></a>
        <a href="https://www.linkedin.com/in/amartya-basu-510b7a1a2/" target="_blank"><img src="resources/linkedin_logo.png" alt="linkedin"  style="width: 35px;"></a>
         <a href="https://x.com/amartya_io" target="_blank"><img src="resources/x_logo.png" alt="X"  style="width: 40px;"></a>
-        <a href="resources/Amartya_Basu.pdf" target="_blank" onclick="showUpdateMessage(event)"><img src="resources/cv_logo.png" alt="CV"  style="width: 40px;"></a>
+        <a href="resources/Amartya_Basu.pdf" target="_blank" onclick="showUpdateMessage(event)"><img src="resources/cv_logo.png" alt="CV"  style="width: 40px; margin-left:-4px; padding: 0; display: block;"></a>
     
 </div>
 </div>
