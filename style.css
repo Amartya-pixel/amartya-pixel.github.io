@@ -580,6 +580,9 @@ margin-top: 20px;
         flex-direction: column;
         width: 100%;
     }
+   .links{
+	margin-left:-10px;
+	}
 
     .news-section-column {
         order: 1;
