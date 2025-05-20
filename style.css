@@ -563,11 +563,13 @@ margin-top: 20px;
         order: 2; /* Research comes next */
     }
 
-
+.fles-content{
+margin-top:-20px;
+}
 
 
 .flex-image {
-        margin-bottom: -60px; /* Reduce spacing between image and text */
+        margin-bottom: -20px; /* Reduce spacing between image and text */
     }
 
     
