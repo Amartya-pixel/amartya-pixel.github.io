@@ -566,7 +566,9 @@ margin-top: 20px;
 .flex-content {
 margin-top:-40px;
 }
-
+.biography {
+margin-left:-10px;
+}
 
 .flex-image {
         margin-bottom: -20px; /* Reduce spacing between image and text */
