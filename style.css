@@ -209,6 +209,8 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
   padding: 5px;
   width: 150px;
 }
+
+
 /* Research Paper heading */
 .research-heading {
   font-weight: 650;
@@ -224,6 +226,20 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
   border-bottom: 2px solid blue; /* Bold underline */
             
 }
+/*Author Details */
+.authors{
+margin-top:-15px;
+font-weight:490;
+margin-bottom:-20px;
+font-style:italic;
+color: #3399ff;
+}
+.primary-author{
+color:black;
+font-weight:650;
+font-style:italic;
+}
+
 /* Research Highlights */
  .flex-column {
         display: flex;
@@ -263,7 +279,7 @@ background-color: #fff; /* Ensures background is solid for the shadow effect */
         display: flex;
         flex-direction: column;
         justify-content: center;
-font-size:16px;
+font-size:16px; 
     }
 
     
@@ -286,9 +302,9 @@ font-size:16px;
 }
 
 .button-container {
-    display: flex; /* Makes child elements (buttons) align horizontally */
-    justify-content: center; /* Centers buttons within the container */
-    gap: 10px; /* Adds space between buttons */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .button {
@@ -519,7 +535,6 @@ background-color:#faf7f7;
     align-items: center;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 15px;
 }
 
 .flex-image {
