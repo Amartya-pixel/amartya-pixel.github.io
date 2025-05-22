@@ -210,11 +210,20 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
   width: 150px;
 }
 /* Research Paper heading */
-.research-heading{
-font-weight:650;
-color:blue;
+.research-heading {
+  font-weight: 650;
+  color: blue;
 }
 
+.research-heading-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.research-heading-link:hover .research-heading {
+  border-bottom: 2px solid blue; /* Bold underline */
+            
+}
 /* Research Highlights */
  .flex-column {
         display: flex;
