@@ -355,8 +355,8 @@ position: absolute;
 }
 .container2 {
     display: grid;
-    grid-template-columns: 3fr 1fr; /* Research (larger) | News (smaller) */
-    gap: 20px;
+    grid-template-columns: 3.2fr 1fr; /* Research (larger) | News (smaller) */
+    gap: 15px;
     max-width: 1200px;
     
 }
@@ -437,7 +437,7 @@ margin-left: -5px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-margin-top: 20px;
+margin-top:60px;
 }
 
 .research-section-column {
