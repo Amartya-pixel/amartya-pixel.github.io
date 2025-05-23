@@ -146,69 +146,7 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
         margin-right:0px;
     }
 }
-/* Papers */
-.toggle-filters td { padding: 0em 2em 0.2em 0em; }
-.toggle-filters span { margin: 0.2em; }
-.papers > div {
-    margin: 1em 0em, 10px, 10px;
-}
-.authors > span:not(:last-child) { margin-right: 3em; }
-.authors > span { display: inline-block; }
-.paper-links { padding: 1em 0em; }
-.tabs {
-    background-color: var(--disabled); color: var(--light); display: block;
-    font-size: 18px; font-weight: 400
-}
-.tabs { border-radius: var(--radius) var(--radius) 0 0; }
-.tabs > div:first-child { border-radius: var(--radius) 0 0 0; }
-.tabs > div, .tab {
-    background-color: var(--dark); padding: 0.5em 1.5em; display: inline-block
-}
-.topics > div {
-    border: 1px solid black; border-radius: 0 0 var(--radius) var(--radius);
-    display: block; padding: 1em;
-}
-.topics > div.disabled, .papers > div.disabled { display: none !important; }
-.papers > div > div {
-    padding: 0.6em; border: 1px solid black;
-    border-radius: 0 0 var(--radius) var(--radius);
-}
-.papers > div > a {
-    background-color: var(--dark); color: var(--light); padding: 0.6em;
-    display: block; text-decoration: none;
-	font-size :18px;
-    border-radius: var(--radius) var(--radius) 0 0;
-}
 
-.papers > div > a.active:hover {
-    background-color: var(--highlight);
-}
-.paper-links > a, .button {
-    background-color: var(--dark); color: var(--light);
-    padding: 0.5em 1em; text-decoration: none; border-radius: var(--radius);
-    display: inline-block; margin: 0.2em 0em;
-}
-.button.disabled, .tabs > div.disabled {
-    background-color: var(--disabled);
-}
-.paper-links > a:not(:last-child) { margin-right: 0.5em; }
-.paper-links > a:hover, .button:hover, .tabs > div:hover, .tab:hover {
-    background-color: var(--highlight-tl); color: var(--light) }
-
-/* Images */
-.image-800, .image-600, .image-500, .image-400 { width: 100%; }
-.image-800 > img, .image-600 > img, .image-500 > img, .image-400 > img
-    { margin-left: auto; margin-right: auto; display: block; }
-.image-600 > img { width: calc(min(100%, 700px)); }
-.image-500 > img { width: calc(min(100%, 500px)); }
-.image-400 > img { width: calc(min(100%, 400px)); }
-
-.img_ubiq_map{
- border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-}
 
 
 /* Research Paper heading */
@@ -247,59 +185,63 @@ color: #3399ff;
         gap: 10px;
     }
 
-    .flex-box {
-        display: flex;
-        justify-content: space-between;
-        padding: 5px;
-        /*border: 1px solid #ccc;*/
-        border-radius: 5px;
-        margin-bottom: 5px;
-margin-right: -15px;
-background-color: #fff; /* Ensures background is solid for the shadow effect */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);  /*Light shadow for depth */
-    }
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: -15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* Light shadow for depth */
+}
 
-    .flex-image {
-    flex: 1;
-    padding: 10px;
-    margin-right: 10px;
-    justify-content: center;
-    display: flex; /* Apply flexbox */
-    align-items: center; /* Vertically center the image */
-    justify-content: center; /* Horizontally center the image */
+.flex-image {
+    flex: 0 0 250px; /* Adjust container size as needed */
+    margin-right: 20px;
+    display: flex;
+padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center align caption text */
 }
 
 .flex-image img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%; /* Scale image to fit container */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Space between image and caption */
 }
 
-    .flex-content {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-font-size:16px; 
-    }
+.image-caption {
+    font-size: 15px; /* Adjust caption size */
+    margin-top: 5px; /* Space above caption */
+    line-height: 1.2; /* Better readability */
+    color: #333; /* Neutral color for text */
+}
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
 
-    
-
-    .responsive-video-container {
+.responsive-video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     max-width: 100%;
     background-color: #000;
- margin-bottom: 10px;
-}
-
-
-.responsive-video {
-    aspect-ratio: 16 / 9; /* Maintain a standard video aspect ratio */
-    width: 100%; /* Video will scale based on its container's width */
     
 }
+
+.responsive-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
 
 .button-container {
     display: flex;
@@ -529,35 +471,8 @@ background-color:#faf7f7;
   display: block;
   color: #222;
 }
-/* Flexbox for Research Items */
-.flex-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-}
 
-.flex-image {
-    flex: 0 0 250px; /* Adjust container size as needed */
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Center align caption text */
-}
 
-.flex-image img {
-    width: 100%; /* Scale image to fit container */
-    border-radius: 8px;
-    margin-bottom: 10px; /* Space between image and caption */
-}
-
-.image-caption {
-    font-size: 15px; /* Adjust caption size */
-    margin-top: 5px; /* Space above caption */
-    line-height: 1.2; /* Better readability */
-    color: #333; /* Neutral color for text */
-}
 
 /* Mobile View */
 @media (max-width: 768px) {
