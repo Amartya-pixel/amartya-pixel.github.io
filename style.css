@@ -391,12 +391,12 @@ margin-left: -5px;
 
   /* When any link is hovered, push others slightly */
   .links a:hover {
-    margin: 0 10px; /* Push neighbors sideways */
+    margin: 0 4px; /* Push neighbors sideways */
   }
 
   /* Enlarge only the hovered image */
   .links a:hover img {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 
 /* Hover a line */
