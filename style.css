@@ -504,7 +504,7 @@ background-color:#faf7f7;
     }
 
 .flex-content {
-margin-top:-40px;
+margin-top:0px;
 }
 .biography {
 margin-left:-10px;
@@ -516,9 +516,6 @@ margin-left:-10px;
 .flex-image {
         margin-bottom: -20px; /* Reduce spacing between image and text */
     }
-
-.image-caption{
-margin-bottom:-20px;}
 
     
 }
