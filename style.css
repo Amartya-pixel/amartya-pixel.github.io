@@ -658,10 +658,16 @@ margin-left:-10px;
         margin-left: -5px;
     }
 
+    .links img {
+        width: 24px;
+        height: auto;
+    }
+
     .news-section-column,
     .research-section-column {
-        width: 48%;
+        flex: 1 1 48%;
         font-size: 15px;
+        min-width: 300px;
     }
 
     .news-section h3 {
