@@ -246,6 +246,7 @@ padding: 10px;
 .button-container {
     display: flex;
     justify-content: center;
+margin-top:10px;
     gap: 10px;
 }
 
@@ -515,6 +516,9 @@ margin-left:-10px;
 .flex-image {
         margin-bottom: -20px; /* Reduce spacing between image and text */
     }
+
+.image-caption{
+margin-bottom:-5px;}
 
     
 }
