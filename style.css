@@ -476,7 +476,10 @@ background-color:#faf7f7;
 .program-commitee-column h2 {
     font-size: 34px;
 }
-
+.program-commitee-column h3 {
+    font-size: 20px;
+margin-bottom:-15px;
+}
 
 /* Mobile View */
 @media (max-width: 768px) {
