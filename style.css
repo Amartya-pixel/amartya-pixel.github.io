@@ -140,13 +140,6 @@ hr { border-top: 1px solid var(--dark); margin: 20px 10%; }
         padding: 10px; /* Padding for spacing */
     }
     }
-@media (max-width: 768px) {
-    .news-section {
-        padding: 5px;
-        margin-right:0px;
-    }
-}
-
 
 
 /* Research Paper heading */
@@ -274,32 +267,6 @@ margin-top:10px;
     color: black;
 }
 
-
-@media (max-width: 768px) {
- .news-section-column {
-        margin-left: -15px;
-}
-    .flex-box {
-        flex-direction: column;
-        margin-right: 0;
-        margin-left: -5px;  /* Shift slightly to the left */
-        padding-right: 10px; /* Add some right padding */
-        box-sizing: border-box; /* Ensure padding doesn’t overflow */
-        width: 100%;
-        overflow-x: hidden;  /* Prevent horizontal scroll */
-    }
-
-    .flex-image {
-        margin-right: 0;
-        margin-bottom: 10px;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .flex-content {
-        padding: 5px;
-    }
-}
 .container2 {
     display: grid;
     grid-template-columns: 3.2fr 1fr; /* Research (larger) | News (smaller) */
@@ -483,47 +450,43 @@ margin-bottom:-15px;
 
 /* Mobile View */
 @media (max-width: 768px) {
-    .container2 {
-        display: flex;
-        flex-direction: column;
-    }
-
-   .news-section-column {
-        order: 1; /* News comes first */
-        font-size: 16px; /* Increase the font size */
-      
-    }
-
-    .news-section h3 {
-        font-size: 22px; /* Increase the headline size */
-    }
-
-    .news-section ul {
-        font-size: 16px; /* Larger font size for list items */
-        
-    }
-
-   
-
-    .research-section-column {
-        order: 2; /* Research comes next */
-    }
-
-.flex-content {
-margin-top:-80px;
-}
-.biography {
-margin-left:-10px;
-}
-.contact{
-margin-left:-10px;
-}
-
-.flex-image {
-        margin-bottom: -20px; 
-    }
-.flex-content{
-margin-top:-20px;
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .news-section-column {
+    order: 1;
+    font-size: 16px;
+    margin-left: -15px;
+  }
+  .news-section h3 { font-size: 22px; }
+  .news-section ul { font-size: 16px; }
+  .research-section-column { order: 2; }
+  .flex-box {
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: -5px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .flex-image {
+    margin-right: 0;
+    margin-bottom: -20px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .flex-content {
+    padding: 5px;
+    margin-top: -20px;
+  }
+  .biography {
+    width: 90vw;
+    font-size: 18px;
+    margin-left: -10px;
+  }
+  .contact { margin-left: -10px; }
 }
 
     
