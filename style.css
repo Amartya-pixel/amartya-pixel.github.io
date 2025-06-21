@@ -21,7 +21,7 @@
         font-weight: 400;
 	line-height: 1.5;
 	color: var(--dark);
-	background-color: #faf7f7; /*#fff;*/
+	background-color:  #fff;/*#faf7f7;*/
 	width: 100%;
 	margin: 0;
 }
@@ -357,7 +357,7 @@ margin-top:75px;
 .research-section-column {
     background-color: #ffffff;
     padding: 10px;
-background-color:#faf7f7;
+background-color:#fff;
 }
 .news-section {
     max-height: 100%; /* Ensures it does not extend */
