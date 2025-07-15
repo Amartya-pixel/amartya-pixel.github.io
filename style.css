@@ -191,7 +191,7 @@ color: #3399ff;
 }
 
 .flex-image {
-    flex: 0 0 250px; /* Adjust container size as needed */
+    flex: 0 0 280px; /* Adjust container size as needed */
     margin-right: 20px;
     display: flex;
 padding: 10px;
@@ -471,11 +471,11 @@ margin-bottom:-15px;
     overflow-x: hidden;
   }
   .flex-image {
-    margin-right: 0;
-    margin-bottom: -20px;
-    max-width: 100%;
-    text-align: center;
-  }
+  position: relative;
+  margin-bottom: -90px ;
+  max-width: 100%;
+ 
+}
   .flex-content {
     padding: 5px;
     margin-top: -30px;
