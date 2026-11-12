@@ -2,7 +2,7 @@
 :root {
   --accent: #a31f34;
   --accent-dk: #7e1728;
-  --link-underline: rgba(23, 114, 208, 0.25);
+  --link-underline: rgba(175, 83, 37, 0.2);
 }
 /* latin-ext */
 @font-face {
@@ -110,9 +110,9 @@ h2 {
 
 .papertitle {
   font-family: 'Inter', Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 550;
-  color: black;
+  color: #410d16c0;
 }
 
 .name {
