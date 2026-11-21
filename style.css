@@ -209,6 +209,7 @@ span.highlight {
 body {
   position: relative;
   min-height: 100%;
+  background-color: #e4d7d74c;
 }
 
 body > table {
